@@ -7,6 +7,17 @@
 <body>
 <script>
   // ここにJavaScriptを書いていきます
+
+  function delay(callback) {
+  console.log('ここは処理に3秒かかる関数の中です。');
+  setTimeout(function() {
+    callback();
+  }, 3000);
+}
+
+delay(function() {
+  console.log('処理に3秒かかる関数が実行し終わりました。');
+});
   
 </script>
 </body>
