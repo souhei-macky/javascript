@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScriptの練習 - 02</title>
+</head>
+<body>
+<script>
+  // ここにJavaScriptを書いていきます
+  //問題１
+  var languagesArray = ['Japanese', 'English', 'Spanish', 'JavaScript']
+  console.log(languagesArray[3]);
+
+  //問題２
+  var user = {
+  name: 'arata',
+  age: 26,
+  bloodType: 'A',
+  favorite: 'card'
+  }
+  console.log(user.age);
+
+//問題３
+  var userList = [
+    {
+      name: 'arata',
+      age: 26
+    },
+    {
+      name: 'watanabe',
+      age: 83
+    },
+    {
+      name: 'totani',
+      age: 23
+    }
+  ];
+  console.log(userList[1].name);
+
+  //問題４
+  var playerList = [
+    {
+      name: 'arata',
+      age: 26,
+      favorites: [
+        'Card Game',
+        'Basket Ball',
+        'Programming'
+      ]
+    },
+    {
+      name: 'watanabe',
+      age: 83,
+      favorites: [
+        'Tinder',
+        'The Legend of Zelda'
+      ]
+    },
+    {
+      name: 'totani',
+      age: 23,
+      favorites: [
+        'Football',
+        'Smash Bros.'
+      ]
+    }
+  ];
+  console.log(playerList[1].favorites[1]);
+
+  //問題５
+  var showText = function() {
+    console.log('これは関数です。');
+  }
+  showText();
+
+  //問題６
+  var num = 0;
+  if (num > 0) {
+    console.log('変数numは' + num + 'で、0より大きいです。');
+  } else if (num < 0) {
+    console.log('変数numは' + num + 'で、0より小さいです。');
+  } else {
+    console.log('変数numは0です。');
+  }
+
+  //問題７
+  var countryList = ['Japan', 'China', 'America', 'Spain', 'Germany'];
+  for (var i = 0; i < countryList.length; i++) {
+    console.log(countryList[i]);
+  }
+
+  //問題８
+  var multiplesTen = [];
+  multiplesTen[0] = [0,10,20,30,40]
+  for(var i = 0; i < multiplesTen.length; i++) {
+    console.log(multiplesTen[i]);
+  }
+
+</script>
+</body>
+</html>
